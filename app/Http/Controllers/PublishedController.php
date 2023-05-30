@@ -64,6 +64,7 @@ class PublishedController extends Controller
         $request->validate([
             'Title' => 'required',
             'Author' => 'required',
+            'Summary' => 'required',
             'Cover' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
    
